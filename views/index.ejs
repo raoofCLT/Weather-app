@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Weather app</title>
+</head>
+<body>
+    <div class="container">
+        <form action="/" class="search" method="post">
+            <input type="text" placeholder="Place" name="cityname">
+            <button><img src="/images/magnifying-glass.png" class="searchIcon" alt=""></button>
+        </form>
+        <div class="weather">
+            <img src="<%= all.weatherimg%>" class="weatherimg" alt="">
+            <h1 class="temp"><%= all.temp%>°C</h1>
+            <h2 class="place"><%= all.country%></h2>
+            <h2 class="climate"><%= all.climate%></h2>
+          
+            <div class="details">
+                <div class="col">
+                        <img src="/images/humidity.png" alt="">
+                    <div>
+                        <p class="humidity"><%= all.humidity%>%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="/images/wind.png" alt="">
+                <div>
+                    <p class="wind"><%= all.wind%></p>
+                    <p>Wind</p>
+                </div>
+            </div>
+            </div>
+  
+</body>
+</html>
