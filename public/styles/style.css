@@ -5,8 +5,9 @@
 }
 
 body{
-    /* background-color:rgb(6, 255, 251) ; */
-    background-color: #f2f2f2;
+    /* background: linear-gradient(to top left, #d3d3d3, #ffffff); */
+    /* background: linear-gradient(135deg, #6dd5ed, #2193b0, #a1ffce, #f5f7fa); */
+    background: linear-gradient(to bottom left, #E0FBE2, #BFF6C3);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -17,10 +18,11 @@ body{
     width: 90%;
     max-width: 470px;
     background: linear-gradient(135deg, #6dd5ed, #2193b0, #a1ffce, #f5f7fa);    color: #ffffff;
-    margin: 100px auto 0;
+    margin: 0 auto 0;
     border-radius: 20px;
     padding: 40px 35px;
     text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .search{
@@ -34,12 +36,14 @@ body{
     border: 0;
     outline: 0;
     background: #ebfffc;
-    color: #555;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.5);
     padding: 10px 25px;
     height: 60px;
     border-radius: 30px;
     flex: 1;
     margin-right: 16px;
+    margin-top: 20px;
     font-size: 18px;
 }
 
@@ -47,10 +51,13 @@ body{
     border: 0;
     outline: 0;
     background: #ebfffc;
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 50%;
     width: 60px;
     height: 60px;
+    margin-top: 20px;
     cursor: pointer;
+    
 }
 
 .search button img{

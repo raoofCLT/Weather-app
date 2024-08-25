@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({extended:true}))
 const APIKey = process.env.API_Key;
 
 const all = {
-    country : "Place",
+    country : "Denmark",
     temp : "32",
     climate : "Cloud",
     wind : 52,
@@ -58,14 +58,9 @@ app.post("/", async (req,res) =>{
         console.log(err)
         res.render("index.ejs",{all})
     }
-    // console.log(result)
 } )
 
 
 app.listen(port, () =>{
     console.log(`Your server is running on ${port}`);
 })
-
-// Light rain — when the precipitation rate is < 2.5 mm (0.098 in) per hour.
-// Moderate rain — when the precipitation rate is between 2.5–7.6 mm (0.098–0.299 in) or 10 mm (0.39 in) per hour.
-// Heavy rain — when the precipitation rate is > 7.6 mm (0.30 in) per hour, or between 10 and 50 mm (0.39 and 1.97 in) per hour.
